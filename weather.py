@@ -31,7 +31,7 @@ def getTempF():
 def getFeelsLike():
     jsonOut = getWeather()
     main = jsonOut['main']
-    currentFeelsLike= main['feels_like']
+    currentFeelsLike = main['feels_like']
     tempFeelsLikeConversion = round((currentFeelsLike - 273.15) * 9/5 + 32, 2)
     return tempFeelsLikeConversion
 
