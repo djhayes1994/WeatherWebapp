@@ -17,7 +17,6 @@ def getWeather(zipCode = getZip()):
     complete_url = base_url + "zip=" + zipCode + "&appid=" + apiKey
     response = requests.get(complete_url)
     jsonOut = response.json()
-    print(response)
     return jsonOut
 
 # Gets the current tempurature for the zip code provided in Kelvin and converts it to Farenheit.
