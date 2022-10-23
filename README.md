@@ -18,3 +18,5 @@ You can get this from: https://openweathermap.org/api
 
 ## Expected inputs
 You will be asked for a zip code, enter a 5 digit zip code.
+
+Only works with US zip codes.
