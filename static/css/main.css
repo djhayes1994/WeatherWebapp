@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 60%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+.main-head{
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+.main-body{
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+.weatherinfo{
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+img{
+    height: 30px;
+    width: 30px;
+}
