@@ -29,6 +29,6 @@ def get_weather():
     return render_template('weather.html', title='Weather App', data=json.loads(data.read().decode('utf8')))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 
 
