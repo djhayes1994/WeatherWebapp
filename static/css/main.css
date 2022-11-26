@@ -6,6 +6,7 @@ body{
     align-content: center;
     align-items: center;
     color: #F7F7F7;
+    font-size:1vw;
 }
 .main{
     position: fixed;
@@ -13,7 +14,6 @@ body{
     left: 50%;
     height: 80%;
     width: 60%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     background-color: #393E46;
 }
@@ -62,4 +62,7 @@ a{
 }
 .disclaimer{
     padding: 8px;
+}
+.main-headtext{
+    font-size:5vw;
 }
