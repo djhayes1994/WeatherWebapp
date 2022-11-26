@@ -3,17 +3,8 @@ import os
 import urllib
 import json
 
-
 # Define app
 app = Flask(__name__)
-
-# Let's fill in those variables so we can print something useful to the console. 
-# currentTemp = getTempF()
-# currentHumidity = getHumidity()
-# cityName = getCityName()
-# weatherDesc = getWeatherDesc()
-# countryCode = getCountryCode()
-# feelsLike = getFeelsLike()
 
 @app.route('/',)
 def home():
@@ -38,6 +29,6 @@ def get_weather():
     return render_template('weather.html', title='Weather App', data=json.loads(data.read().decode('utf8')))
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=80)
 
 
