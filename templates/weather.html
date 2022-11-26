@@ -13,16 +13,14 @@
             <div class="weatherinfo">
                 <table>
                     <tr>
-                        <th>City</th>
                         <th>Temp</th>
                         <th>Humidity</th>
                         <th>Weather</th>
                     </tr>
                         <tr>
-                            <td>{{ data.name }}</td>
                             <td>{{ data.main.temp }}°F</td>
                             <td>{{ data.main.humidity }}%</td>
-                            <td><img src='http://openweathermap.org/img/w/{{ data.weather[0]["icon"]}}.png' /> {{ data.weather[0]['main'] }}</td>
+                            <td><img src='http://openweathermap.org/img/w/{{ data.weather[0]["icon"]}}.png' class="icon" />{{ data.weather[0]['main'] }}</td>
                         </tr>
                 </table>
                 <a href="/">Return</a>

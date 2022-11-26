@@ -22,7 +22,6 @@ def get_weather():
     url_values = urllib.parse.urlencode(data)
     url = "https://api.openweathermap.org/data/2.5/weather?"
     complete_url = url + url_values
-    print(complete_url)
     data = urllib.request.urlopen(complete_url)
     resp = Response(data)
     resp.status_code = 200
