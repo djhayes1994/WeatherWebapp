@@ -7,13 +7,13 @@ apiKey = os.environ.get('openweather_apiKey')
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
 
 # Grabs user input so we know what zip code to use.
-def getZip():
-    while True:
-        zip = input('Insert zip code: ')
-        return zip
+# def getZip():
+#     while True:
+#         zip = input('Insert zip code: ')
+#         return zip
 
 # Queries the OpenWeather API to get information on the weather for the supplied zip.
-def getWeather(zipCode = getZip()):
+def getWeather(zipCode = 16601):
     complete_url = base_url + "zip=" + zipCode + "&appid=" + apiKey
     response = requests.get(complete_url)
     jsonOut = response.json()
